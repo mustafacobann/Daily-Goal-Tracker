@@ -15,12 +15,12 @@ struct MenuBarLabel: View {
            let remaining = goalInfo?.numberOfRemainingTasks
         {
             if remaining > 0 {
-                Text("Remaining \(goalName.pluralify(count: remaining)): \(remaining)")
+                Text("\(goalName.pluralize(count: remaining)): \(remaining)")
             } else {
-                Text("Goal reached 🎉")
+                Text("🎉")
             }
         } else {
-            Text("Daily Goal Tracker")
+            Text("🤓")
         }
     }
 }

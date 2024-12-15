@@ -13,7 +13,7 @@ struct GoalTrackingView: View {
     var formattedGoal: String {
         guard let goalName = goalInfo?.name, let target = goalInfo?.target
         else { return "" }
-        return "\(target) " + goalName.pluralify(count: target)
+        return "\(target) " + goalName.pluralize(count: target)
     }
 
     var body: some View {
